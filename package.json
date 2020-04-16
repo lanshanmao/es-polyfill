@@ -1,0 +1,37 @@
+{
+  "name": "es-polyfill",
+  "version": "1.0.0",
+  "description": "study es new speciality",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src --fix --ext .ts"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "line-stage"
+    }
+  },
+  "lint-staged": {
+    "*.{.ts,.tsx}": [
+      "eslint",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lanshanmao/es-polyfill.git"
+  },
+  "author": "kmlin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lanshanmao/es-polyfill/issues"
+  },
+  "homepage": "https://github.com/lanshanmao/es-polyfill#readme",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.28.0",
+    "@typescript-eslint/parser": "^2.28.0",
+    "eslint": "^6.8.0",
+    "typescript": "^3.8.3"
+  }
+}
